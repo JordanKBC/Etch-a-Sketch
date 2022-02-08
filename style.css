@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+.mainContainer {
+    display:flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+.gridSquare {
+    width: 15px;
+    height: 20px;
+}
+
+.hover {
+    background-color: black;
+}
