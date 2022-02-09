@@ -1,6 +1,6 @@
 let container = document.querySelector(".mainContainer");
-let btn = document.querySelector("button");
 
+let resetBtn = document.querySelector(".resetButton");
 
 let rowArray = [];
 let gridSquareArray = []
@@ -39,7 +39,7 @@ promptNumSide();
 createGrid();
 
 //EventListener to remove "hover" effect
-btn.addEventListener("click", ()=> {
+resetBtn.addEventListener("click", ()=> {
     let gridNodeList = document.querySelectorAll(".gridSquare");
     let rowNodeList = document.querySelectorAll(".row");
     for (i=0; i<numSide**2 ;i++) {
@@ -54,7 +54,22 @@ btn.addEventListener("click", ()=> {
     createGrid();
 });
 
-//EventListener to clear
-// btn.addEventListener("click", ()=> {
-//     promptNumSide();
-// });
+
+// let defaultBlackBtn = document.querySelector(".bButton");
+// let randomRGBBtn = document.querySelector(".cButton");
+
+
+//Random Color Generator
+// function getRandomColor() {
+//     var letters = '0123456789ABCDEF';
+//     var color = '#';
+//     for (var i = 0; i < 6; i++) {
+//       color += letters[Math.floor(Math.random() * 16)];
+//     }
+//     return color;
+//   }
+
+
+// //Event Listener to generate random color once button is clicked
+// let randomColor = getRandomColor();
+// document.documentElement.style.setProperty('--some-color', 'randomColor');

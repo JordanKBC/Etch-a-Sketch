@@ -22,9 +22,23 @@ body {
     flex: 1;
 }
 
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 40px;
+}
+
 button {
     margin-bottom: 20px;
+    padding: 5px;
 }
+
+.cButton,.bButton {
+    flex: 1;
+}
+
+
 
 .gridSquare {
     flex:1;
@@ -33,3 +47,7 @@ button {
 .hover {
     background-color: black;
 }
+
+/* .randomRGB {
+    background-color: var(--some-color);
+} */
