@@ -8,7 +8,11 @@ let numSide;
 
 //Function to prompt user to indicate number of sides
 function promptNumSide () {
-    numSide =prompt("Number of squares per side of grid?");
+    numSide = prompt("Number of squares per side of grid?");
+    if (numSide > 100) {
+        alert("Please choose a number below 100.")
+        numSide = prompt("Number of squares per side of grid?");
+    }
 }
 
 //Function to Create Grid
