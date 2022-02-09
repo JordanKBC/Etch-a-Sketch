@@ -37,9 +37,14 @@ createGrid();
 //EventListener to remove "hover" effect
 btn.addEventListener("click", ()=> {
     let gridNodeList = document.querySelectorAll(".gridSquare");
+    let rowNodeList = document.querySelectorAll(".row");
     for (i=0; i<numSide**2 ;i++) {
         let gridNode = gridNodeList[i]
         gridNode.remove()
+    }
+    for (i=0; i<numSide ;i++) {
+        let rowNode= rowNodeList[i]
+        rowNode.remove()
     }
     promptNumSide();
     createGrid();

@@ -12,10 +12,14 @@ body {
 .mainContainer {
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 300px;
 }
 
 .row {
     display: flex;
+    flex: 1;
 }
 
 button {
@@ -23,8 +27,7 @@ button {
 }
 
 .gridSquare {
-    width: 15px;
-    height: 20px;
+    flex:1;
 }
 
 .hover {
